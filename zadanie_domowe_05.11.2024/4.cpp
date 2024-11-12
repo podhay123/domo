@@ -10,7 +10,7 @@ int main(){
     while (n1 != i){ 
         int number; 
         cin >> number; 
-        first[i] = number;  
+        first[i] = number; 
         i = i + 1; 
     } 
     cin >> n2; 
@@ -31,10 +31,10 @@ int main(){
         j = 0;
         bool logic = true;
         while (n2!=j){
-            j = j + 1;
             if (first[i] == second[j]){
                 logic = false;
             }
+            j = j + 1;
         }
         if (logic == true){
             final[k] = first[i];
@@ -42,8 +42,24 @@ int main(){
         }
         i = i + 1;
     }
+    i = 0;
+    while (n2!=i){
+        j = 0;
+        bool logic = true;
+        while (n1!=j){
+            if (second[i] == first[j]){
+                logic = false;
+            }
+            j = j + 1;
+        }
+        if (logic == true){
+            final[k] = second[i];
+            k = k + 1;
+        }
+        i = i + 1;
+    }
     j = 0;
-    while (j!=k-1){
+    while (j!=k){
         cout << final[j]<< endl;
         j = j + 1;
     }

@@ -1,0 +1,9 @@
+8
+a J 1 c P 8
+c K 2 b J 7
+b K 3 a P 6
+c N 4 a P 5
+c S 5 b S 4
+b K 6 d K 6
+d N 7 c J 2
+c P 8 d S 1
