@@ -39,7 +39,14 @@ int Shift_left(short int number, short int shift){
     }
     return number;
 }
-
+int Multi_3_5(short int number){
+    int result = (number << 1) + x;
+    result += number >> 1;
+    return result;
+}
+int Xor(short int a, short int b){
+    return (a | b) & ~(a & b);
+}
 int main(){
     cout << Shift_left(-5,1);
 }
