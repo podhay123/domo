@@ -1,0 +1,7 @@
+!blackbox sklad_towaru 
+```
+FILL 1 1 1 1 1
+SET-AS 0 0 1 0
+GET-E
+END
+```
